@@ -49,7 +49,7 @@ var GetValue = function (source, key, defaultValue, altSource) {
         res = res[keys.pop()];
         if (res == undefined) useAlt = true;
     };
-    if (useAlt && altSource) res=GetValue(altSource, key, defaultValue);
+    if (useAlt && altSource) res = GetValue(altSource, key, defaultValue);
     return res ?? defaultValue;
 };
 
